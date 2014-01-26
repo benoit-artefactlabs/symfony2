@@ -1,0 +1,4 @@
+artefactlabs_html:
+    resource: "@ArtefactlabsHtmlBundle/Resources/config/routing.yml"
+    prefix:   /
+

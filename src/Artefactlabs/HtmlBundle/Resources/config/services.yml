@@ -1,0 +1,7 @@
+parameters:
+#    artefactlabs_html.example.class: Artefactlabs\HtmlBundle\Example
+
+services:
+#    artefactlabs_html.example:
+#        class: %artefactlabs_html.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

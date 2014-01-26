@@ -1,0 +1,3 @@
+artefactlabs_html_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ArtefactlabsHtmlBundle:Default:index }
