@@ -1,3 +1,11 @@
 artefactlabs_html_homepage:
     pattern:  /
     defaults: { _controller: ArtefactlabsHtmlBundle:Default:index }
+
+artefactlabs_js_main:
+    pattern:  /javascript/main.js
+    defaults: { _controller: ArtefactlabsHtmlBundle:Javascript:main }
+
+artefactlabs_js_config:
+    pattern:  /javascript/config.js
+    defaults: { _controller: ArtefactlabsHtmlBundle:Javascript:config }

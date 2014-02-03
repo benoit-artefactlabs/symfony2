@@ -19,6 +19,7 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
+        "requirejs/requirejs": "2.1.10",
         "jquery/jquery": "1.11.0",
         "twitter/bootstrap": "2.3.*",
         "leafo/lessphp": "dev-master"
@@ -31,6 +32,17 @@
                 "version": "1.11.0",
                 "dist": {
                     "url": "http://code.jquery.com/jquery-1.11.0.min.js",
+                    "type": "file"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "requirejs/requirejs",
+                "version": "2.1.10",
+                "dist": {
+                    "url": "http://requirejs.org/docs/release/2.1.10/minified/require.js",
                     "type": "file"
                 }
             }

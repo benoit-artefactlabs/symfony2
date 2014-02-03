@@ -20,7 +20,7 @@
                 '%kernel.root_dir%/../vendor/twitter/bootstrap/less/bootstrap.less'
                 '%kernel.root_dir%/../vendor/twitter/bootstrap/less/responsive.less'
                 'bundles/artefactlabshtml/css/main.less'
-                output='css/compiled/main.css'
+                output='compiled/css/main.css'
             %}
                 <link rel="stylesheet" href="{{ asset_url }}" />
             {% endstylesheets %}
@@ -39,25 +39,16 @@
         </div>
 
         {% block javascripts %}
+            {#
             {% javascripts
                 '%kernel.root_dir%/../vendor/jquery/jquery/jquery-1.11.0.min.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-affix.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-alert.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-button.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-carousel.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-collapse.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-dropdown.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-modal.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-scrollspy.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-tab.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-tooltip.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-popover.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-transition.js'
-                '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-typeahead.js'
-                output='js/compiled/vendor.js'
+                '%kernel.root_dir%/../vendor/twitter/bootstrap/docs/assets/js/bootstrap.min.js'
+                output='compiled/js/vendor.js'
             %}
                 <script type="text/javascript" src="{{ asset_url }}"></script>
             {% endjavascripts %}
+            #}
+            {{ include('ArtefactlabsHtmlBundle:Javascript:require.html.twig') }}
         {% endblock %}
     </body>
 </html>
