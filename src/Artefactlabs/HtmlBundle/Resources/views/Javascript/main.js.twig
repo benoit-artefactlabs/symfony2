@@ -1,21 +1,19 @@
-{% set version = assets_version_format|replace({'%s?': '', '=%s' : '=' ~ assets_version, }) %}
-
 require.config({
     baseUrl: '/',
     paths: {
         // jquery
         {% javascripts '%kernel.root_dir%/../vendor/jquery/jquery/jquery-1.11.0.min.js' output='compiled/js/jquery-1.11.0.min.js' %}
-        jquery: "{{ asset_url|replace({'.js': '', ('?' ~ version): ''}) }}",
+        jquery: "{{ asset_url|replace({'.js': ''}) }}",
         {% endjavascripts %}
         // bootstrap
         {% javascripts '%kernel.root_dir%/../vendor/twitter/bootstrap/docs/assets/js/bootstrap.min.js' output='compiled/js/bootstrap.min.js' %}
-        bootstrap: "{{ asset_url|replace({'.js': '', ('?' ~ version): ''}) }}",
+        bootstrap: "{{ asset_url|replace({'.js': ''}) }}",
         {% endjavascripts %}
         // config
-        config: "{{ path('artefactlabs_js_config')|replace({'.js': '', ('?' ~ version): ''}) }}",
+        config: "{{ path('artefactlabs_js_config')|replace({'.js': ''}) }}",
         // artefactlabs
         {% javascripts 'bundles/artefactlabshtml/js/artefactlabs.js' output='compiled/js/artefactlabs.js' %}
-        artefactlabs: "{{ asset_url|replace({'.js': '', ('?' ~ version): ''}) }}",
+        artefactlabs: "{{ asset_url|replace({'.js': ''}) }}",
         {% endjavascripts %}
     },
     shim: {
