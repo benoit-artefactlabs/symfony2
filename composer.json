@@ -21,8 +21,8 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "requirejs/requirejs": "2.1.10",
         "jquery/jquery": "1.11.0",
-        "twitter/bootstrap": "2.3.*",
-        "leafo/lessphp": "dev-master"
+            "twitter/bootstrap": "3.0.0",
+        "leafo/lessphp": "0.4.*"
     },
     "repositories": [
         {
