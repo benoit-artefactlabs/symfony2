@@ -150,7 +150,7 @@
     <target name="parameters" description="Copy parameters">
         <exec executable="cp" failonerror="true">
             <arg path="app/phpunit.xml.dist" />
-            <arg path="app/app/phpunit.xml" />
+            <arg path="app/phpunit.xml" />
         </exec>
         <exec executable="cp" failonerror="true">
             <arg path="app/config/parameters.yml.dist" />
