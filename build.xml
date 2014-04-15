@@ -149,8 +149,12 @@
 
     <target name="parameters" description="Copy parameters">
         <exec executable="cp" failonerror="true">
-            <arg path="app/config/parameters.yml.dist" />
-            <arg path="app/config/parameters.yml" />
+            <arg path="${basedir}/app/phpunit.xml.dist" />
+            <arg path="${basedir}/app/app/phpunit.xml" />
+        </exec>
+        <exec executable="cp" failonerror="true">
+            <arg path="${basedir}/app/config/parameters.yml.dist" />
+            <arg path="${basedir}/app/config/parameters.yml" />
         </exec>
     </target>
 
