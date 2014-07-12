@@ -15,7 +15,7 @@ class DefaultControllerTest extends ArtefactlabsControllerTestCase
     public function provideURL()
     {
         return array(
-            array('/')
+            array('/test')
         );
     }
 
