@@ -1,0 +1,12 @@
+# file: behat.yml
+default:
+    extensions:
+        Behat\MinkExtension\Extension:
+            default_session: symfony2
+            goutte: ~
+            base_url: 'http://www.local.artefactlabs.net/app_test.php'
+
+        Behat\Symfony2Extension\Extension:
+            mink_driver: true
+            kernel:
+                env: test
