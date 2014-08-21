@@ -6,9 +6,9 @@ require.config({
         jquery: "{{ asset_url|replace({'.js': ''}) }}",
         {% endjavascripts %}
         // bootstrap
-        {#{% javascripts '%kernel.root_dir%/../vendor/twitter/bootstrap/docs/assets/js/bootstrap.min.js' output='compiled/js/bootstrap.min.js' %}
+        {% javascripts '%kernel.root_dir%/../vendor/twitter/bootstrap/dist/js/bootstrap.min.js' output='compiled/js/bootstrap.min.js' %}
         bootstrap: "{{ asset_url|replace({'.js': ''}) }}",
-        {% endjavascripts %}#}
+        {% endjavascripts %}
         // config
         config: "{{ path('artefactlabs_js_config')|replace({'.js': ''}) }}",
         // artefactlabs
